@@ -1,1 +1,19 @@
-HELLO
+Options:
+
+--username=
+    The username associated with your OpenStack account.
+--apikey=
+    Your API key.
+--projectid=
+    Your Project ID.
+--url=
+    The API endpoint of your OpenStack implementation.
+--model=
+    Which FailureModel you wish to use. Current choices are "random", "network_outage", "kill_processes"
+--servers=
+    A json file with information about the servers, only required for kill_processes, since it will hold information about the layout of the server graph. Could be replaced with metadata in the future.
+--repeat=
+    How many times to repeat any particular failure model.
+--tag=
+    A metadata tag that is set on the servers to be used. When creating them, it should be "Anarcho=1", and when executing "--tag=Anarcho"
+
